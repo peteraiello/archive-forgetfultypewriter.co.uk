@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>The Forgetful Typewriter | Design & Code</title>
+<link href="style_ft2.css" rel="stylesheet"/>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300,300italic,400italic,700italic%7CRoboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+<meta name=viewport content='width=520'>
+</head>
+<body>
+<div id="wrapper">
+
+
+<div id="wrap">
+
+
+<label for="show-menu" class="show-menu">Menu</label>
+<input type="checkbox" id="show-menu" role="button">
+
+		<ul id="menu" class="b">
+		<li><a href="About_.htm" >About</a></li>
+		<li><a href="Prototypes_.htm">Prototypes </a></li>
+		<li><a href="Users_.htm">Writers & Users</a></li>
+				<li><a href="Design_.htm" class="active" >Design & Code </a></li>
+		<li><a href="Blog_.htm">Blog</a></li>
+		<li><a href="Contact_.htm">Contact</a></li>
+
+	</ul>
+
+
+<div id="header">
+<img src="images/FTwriter-01.png" class="imglogo" alt="FT logo">
+</div>
+
+<div id="container" class="c2">
+<div id="container3">
+<!-- INTRO STARTS HERE ************************************************************************************************* -->
+<div class="border">
+<div id="container35">
+ <p>  <a href="Design_.htm" >< back</a></p>
+<h2 style= "color:#336600;  padding:0px 50px 0px 0px; font-weight:700;  font-family: 'Roboto',  Helvetica, sans-serif; text-transform:uppercase; font-style: italic; font-weight:bold; font-weight:700;  font-family: 'Roboto',  Helvetica, sans-serif;  text-align: left; line-height:100%; opacity:0.6; font-size:160%;">- Word Program</h2>
+
+</div>
+</div>
+
+<!-- WORD SECTION STARTS HERE************************************************************************************************* -->
+
+
+<div class="lightgrn1">
+
+<div>
+<p class="caption" > screenshot example</p>
+<img src="images/SCSHOT.jpg" class="img2" alt="screenshot example">
+</div>
+
+<div class="darkgrn1">
+<p>
+The majority of the program's code is used to develop a simple and usable text editor.
+This consists of using the main program sketch with a word object class.
+<a href="https://processing.org/reference/ArrayList.html" target="_blank" style="color:#fff;">ArrayLists</a>
+feature heavily in the code, and are used in multiple ways, such as storing the letters, or
+strings for the words being typed. Certain methods define the behavior of the words, such as
+programming the words to fade or reappear, and are a creative element of the code.
+</p>
+
+
+</div>
+</div>
+
+
+<p style="border-bottom: 0px solid #000000;" class="cb"></p>
+
+<div class="lightgrn1">
+
+<p class="codebg" style="color:#000">
+
+
+<code>
+void update (){ <br>
+if(millis()> myRandom && ypos < height+50){ <br>
+ypos = ypos +1; <br>
+}
+</code>
+</p>
+
+
+<div class="darkgrn2">
+<p>
+The code used to animate the words, features inside the update method of the word class.
+</p>
+
+<ul>
+<li class="d">A random number is assigned to each word as it is typed (1004,2503, 9540 etc).
+</li>
+
+<li class="d">As the millis function, (a timer which returns the value of how long the
+program has been opened) increases, it causes the words to fall by using the above if statement: </em>
+
+<li class="d">Adding +1 to the ypos will make it move down, and this is how the individual
+ words are animated in order to simulate falling text.
+</li>
+
+</ul>
+
+<p class="cb">
+The update method can also be used to change the value of opacity <code>(opacity=opacity+1;)</code>
+to simulate fading text. Furthermore, millis values can be saved as new variables each time the mouse
+ is pressed. This has culminated in using different flows of time for added functionality,
+  such as starting and pausing the interaction during different stages.
+</p>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+<div id="footer">
+<p id="colorwhite">
+<img src="images/FTwriter-02.png" class="imglogosmall" alt="FT logo">
+
+&copy; 2014-2016 Peter Aiello <br>
+See the design outcomes for this project <a href="http://www.iedesigner.com/"  target="_blank">here</a><br>
+</p>
+</div>
+
+</div>
+</body>
+</html>
